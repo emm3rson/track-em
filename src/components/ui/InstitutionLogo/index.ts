@@ -1,0 +1,1 @@
+export { InstitutionLogo } from "../InstitutionLogo";

@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Track'Em",
+    "slug": "finance-tracker",
+    "version": "4.0.0",
+    "icon": "./assets/app-icon/app-icon.png",
+    "backgroundColor": "#FFFFFF",
+    "experiments": {
+      "reactCompiler": true
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "abiFilters": [
+              "arm64-v8a"
+            ]
+          }
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff",
+          "image": "./assets/app-icon/splash-icon-light.png",
+          "dark": {
+            "image": "./assets/app-icon/splash-icon-dark.png",
+            "backgroundColor": "#000000"
+          },
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9c3a5861-f432-4d69-be5c-d630ce272442"
+      },
+      "displayVersion": "4.0.0"
+    },
+    "android": {
+      "package": "com.emmerson1299.financetracker",
+      "allowBackup": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app-icon/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9c3a5861-f432-4d69-be5c-d630ce272442",
+      "enableBsdiffPatchSupport": true
+    }
+  }
+}
